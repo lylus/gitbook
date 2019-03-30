@@ -9,15 +9,13 @@
   <link rel="stylesheet" href="//unpkg.com/docsify/themes/vue.css">
 </head>
 <body>
+    <div id="app">加载中......</div>
   <script>
   window.$docsify = {
     search: 'auto', // 默认值
 
     search : [
       '/',            // => /README.md
-//      '/guide',       // => /guide.md
-//      '/get-started', // => /get-started.md
-//      '/zh-cn/',      // => /zh-cn/README.md
     ],
 
     // 完整配置参数
@@ -28,7 +26,6 @@
 
       // 支持本地化
       placeholder: {
-//        '/zh-cn/': '搜索',
         '/': '搜索'
       },
 
@@ -36,7 +33,6 @@
 
       // 支持本地化
       noData: {
-//        '/zh-cn/': '找不到结果',
         '/': '找不到结果'
       },
 
@@ -47,12 +43,6 @@
 </script>
 <script src="//unpkg.com/docsify"></script>
 <script src="//unpkg.com/docsify/lib/plugins/search.js"></script>
-  <div id="app"></div>
-  <script>
-    window.$docsify = {
-      //...
-    }
-  </script>
   <script src="//unpkg.com/docsify/lib/docsify.min.js"></script>
 </body>
 </html>
