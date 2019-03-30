@@ -1,8 +1,8 @@
-## Lylus-gitbook
+## Lylus-Book
 
-> 文档生成工具
+> 一些自用目录引导
 
-## 是什么
+## 碣石导航
 
 docsify 是一个动态生成文档网站的工具。不同于 GitBook、Hexo 的地方是它不会生成将 `.md` 转成 `.html` 文件，所有转换工作都是在运行时进行。
 
@@ -10,7 +10,7 @@ docsify 是一个动态生成文档网站的工具。不同于 GitBook、Hexo �
 
 查看[快速开始](zh-cn/quickstart.md)了解详情。
 
-## 特性
+## 广州导航
 
 - 无需构建，写完文档直接发布
 - 容易使用并且轻量 (~19kB gzipped)
@@ -21,6 +21,3 @@ docsify 是一个动态生成文档网站的工具。不同于 GitBook、Hexo �
 - 兼容 IE10+
 - 支持 SSR ([example](https://github.com/docsifyjs/docsify-ssr-demo))
 
-## 例子
-
-可以查看 [Showcase](https://github.com/docsifyjs/docsify/#showcase) 来了解使用 docsify 的文档项目。
