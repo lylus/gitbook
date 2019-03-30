@@ -21,3 +21,36 @@ docsify 是一个动态生成文档网站的工具。不同于 GitBook、Hexo �
 - 兼容 IE10+
 - 支持 SSR ([example](https://github.com/docsifyjs/docsify-ssr-demo))
 
+## 导航
+
+- 无需构建，写完文档直接发布
+- 容易使用并且轻量 (~19kB gzipped)
+- 智能的全文搜索
+- 提供多套主题
+- 丰富的 API
+- 支持 Emoji
+- 兼容 IE10+
+- 支持 SSR ([example](https://github.com/docsifyjs/docsify-ssr-demo))
+
+## 测试
+
+- 无需构建，写完文档直接发布
+- 容易使用并且轻量 (~19kB gzipped)
+- 智能的全文搜索
+- 提供多套主题
+- 丰富的 API
+- 支持 Emoji
+- 兼容 IE10+
+- 支持 SSR ([example](https://github.com/docsifyjs/docsify-ssr-demo))
+
+## Hello
+
+- 无需构建，写完文档直接发布
+- 容易使用并且轻量 (~19kB gzipped)
+- 智能的全文搜索
+- 提供多套主题
+- 丰富的 API
+- 支持 Emoji
+- 兼容 IE10+
+- 支持 SSR ([example](https://github.com/docsifyjs/docsify-ssr-demo))
+
