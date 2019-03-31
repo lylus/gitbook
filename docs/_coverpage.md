@@ -1,6 +1,6 @@
-![logo](_media/logo.svg)
+![logo](_media/logo.png)
 
-# Lylus <small>v0.1a beta</small>
+# Lylus <small>v0.9b beta</small>
 
 > 这是一个自己常用的网址记录！
 
