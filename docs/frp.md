@@ -87,3 +87,89 @@ fi
 
 
 ```
+
+
+## Frpc客户端
+
+frpc.sh
+
+```
+
+#!/bin/bash
+
+# 获取frpc最新版本号
+
+	api_url="https://api.github.com/repos/fatedier/frp/releases/latest"
+
+	new_ver=`curl ${PROXY} -s ${api_url} --connect-timeout 10| grep 'tag_name' | cut -d\" -f4`
+
+	touch ./version.txt
+	cat <<EOF > ./version.txt
+${new_ver}
+EOF
+
+	sed -i 's/v//g' ./version.txt
+	get_releases=$(cat ./version.txt)
+
+	releases_url=https://github.com/fatedier/frp/releases/download/${new_ver}/frp_${get_releases}_linux_amd64.tar.gz
+	rm -rf ./version.txt
+
+
+# 检测frpc版本
+
+
+        old_ver=`/usr/local/frpc/frpc -v`
+
+#       echo "check old frp version results are: $old_ver"
+        echo "检测到本机运行的版本: $old_ver"
+
+#       echo "check new frp version results are: $get_releases"
+        echo "检测到最新的版本: $get_releases"
+
+if [ "$old_ver" = "$get_releases" ]
+
+then
+
+echo "没有检测到新的版本!"
+#echo "check new frp version"
+
+else
+# 安装frpc
+
+        rm -rf /usr/local/frpc/temp
+
+        mkdir /usr/local/frpc/temp
+
+        cd /usr/local/frpc/temp
+
+#	wget --no-check-certificate ${releases_url}
+
+	wget -N --no-check-certificate ${releases_url}
+
+	tar -zxvf frp*.tar.gz
+
+	mv /usr/local/frpc/temp/frp*/frpc /usr/local/frpc/frpcbak
+
+	rm -rf /usr/local/frpc/temp/frp*
+	
+	cp -f /usr/local/frpc/frpcbak /usr/local/frpc/frpc
+	
+        cd /usr/local/frpc
+
+	chmod 755 frpc
+
+     echo "检测到新版本，已更新完成!"
+ #   echo "no no no run frp"
+
+
+#运行frpc
+
+
+fi
+
+/usr/local/frpc/frpc -c /usr/local/frpc/frpc.ini &
+
+
+```
+
+以上脚本文件，放至 ``` /usr/local/frp*/ ``` 后，运行即可，记得赋予权限！
