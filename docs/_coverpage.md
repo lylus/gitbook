@@ -1,4 +1,4 @@
-![logo](_media/icon.svg)
+![logo](_media/logo.svg)
 
 # Lylus <small>v0.1a beta</small>
 
