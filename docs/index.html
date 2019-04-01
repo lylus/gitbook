@@ -76,19 +76,22 @@
 <script src="//unpkg.com/docsify/lib/plugins/gitalk.min.js"></script>
 <script src="//unpkg.com/gitalk/dist/gitalk.min.js"></script>
 <script>
-  const gitalk = new Gitalk({
+//  const gitalk = new Gitalk({
+    var gitalk = new Gitalk({
     clientID: 'a667c95a5a36603ab802',
     clientSecret: 'b7aa7a41752c5c41264dc0a84556c40ae375c589',
     repo: 'lylus',
     owner: 'lylus',
     admin: ['lylus'],
-	  id: 'gitbook', 
+	  id: 'Lylus_Gitbook', 
     // facebook-like distraction free mode
     distractionFreeMode: true
+	    gitalk.render('gitalk-container')
   })
 </script>
 	
-	
+
+
 	
 	
 </body>
